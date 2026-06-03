@@ -1,0 +1,19 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": {
+        "include": [],
+        "sources": {
+            "%PATH_TO_FX%/lib/javafx.base.jar": "%PATH_TO_FX%/src.zip",
+            "%PATH_TO_FX%/lib/javafx.controls.jar": "%PATH_TO_FX%/src.zip",
+            "%PATH_TO_FX%/lib/javafx.fxml.jar": "%PATH_TO_FX%/src.zip",
+            "%PATH_TO_FX%/lib/javafx.graphics.jar": "%PATH_TO_FX%/src.zip",
+            "%PATH_TO_FX%/lib/javafx.media.jar": "%PATH_TO_FX%/src.zip",
+            "%PATH_TO_FX%/lib/javafx.swing.jar": "%PATH_TO_FX%/src.zip",
+            "%PATH_TO_FX%/lib/javafx.swt.jar": "%PATH_TO_FX%/src.zip",
+            "%PATH_TO_FX%/lib/javafx.web.jar": "%PATH_TO_FX%/src.zip"
+        }
+    },
+    "java.debug.settings.vmArgs": "-enableassertions"
+}
