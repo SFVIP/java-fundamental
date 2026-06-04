@@ -1,5 +1,3 @@
-// Define a simple User structure
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -81,10 +79,6 @@ public class JavaArrayConversion {
         
         Integer[] arr = {1, null, 3};
         int x = arr[1];
-        
-        Boxes<String> box = new Boxes<>("ABC");
-        String abc = box.get();
-        System.out.println(abc);
     }
     
     public static List<int[]> dedup(List<int[]> inputs) {
