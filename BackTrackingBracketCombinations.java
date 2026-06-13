@@ -8,24 +8,32 @@ public class BackTrackingBracketCombinations {
     
     public static int BracketCombinations(int num) {
         int[] count = new int[1];
-        backtrack(num, 0, 0, count);
+        backtrack(num, 0, 0, "", count);
         return count[0];
     }
 
-    private static void backtrack(int num, int open, int close, int[] count) {
+    private static void backtrack(int num,
+            int open,
+            int close,
+            String path,
+            int[] count) {
+
+        System.out.printf(
+                "open=%d, close=%d, path=%s%n",
+                open, close, path);
+
         if (open == num && close == num) {
             count[0]++;
+            System.out.println("VALID => " + path);
             return;
         }
 
-        // Add '(' if we still have open brackets left
         if (open < num) {
-            backtrack(num, open + 1, close, count);
+            backtrack(num, open + 1, close, path + "(", count);
         }
 
-        // Add ')' only if it will not make the string invalid
         if (close < open) {
-            backtrack(num, open, close + 1, count);
+            backtrack(num, open, close + 1, path + ")", count);
         }
     }
 }
