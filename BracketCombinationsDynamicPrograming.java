@@ -1,4 +1,4 @@
-public class DynamicProgramingBracketCombinations {
+public class BracketCombinationsDynamicPrograming {
 
     // Catalan Number, APPLICATION WHEN:
     // - Valid parenthesis combinations
@@ -19,21 +19,21 @@ public class DynamicProgramingBracketCombinations {
         for (int n = 1; n <= num; n++) {
             for (int left = 0; left < n; left++) {
                 int right = n - 1 - left;
-                System.out.println("varPcb["+n+"] += varPcb["+left+"] * varPcb["+right+"]");
-                System.out.println(varPcb[n]+" += "+varPcb[left]+" * "+varPcb[right]);
+                // System.out.println("varPcb["+n+"] += varPcb["+left+"] * varPcb["+right+"]");
+                // System.out.println(varPcb[n]+" += "+varPcb[left]+" * "+varPcb[right]);
                 varPcb[n] += varPcb[left] * varPcb[right];
             }
-            System.out.println("varPcb[" + n + "] = " + varPcb[n]);
+            // System.out.println("varPcb[" + n + "] = " + varPcb[n]);
         }
         
-        System.out.print("[");
-        for (int i = 0; i <= num; i++) {
-            System.out.print(varPcb[i]);
-            if (i != num) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println("]");
+        // System.out.print("[");
+        // for (int i = 0; i <= num; i++) {
+        //     System.out.print(varPcb[i]);
+        //     if (i != num) {
+        //         System.out.print(", ");
+        //     }
+        // }
+        // System.out.println("]");
         return varPcb[num];
     }
 }

@@ -1,4 +1,4 @@
-public class BackTrackingBracketCombinations {
+public class BracketCombinationsBackTracking {
     public static void main(String[] args) {
         // System.out.println(BracketCombinations(2)); // 2
         // System.out.println(BracketCombinations(3)); // 5
