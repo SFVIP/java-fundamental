@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class PermutationsDuplicateArray {
     public static void main(String[] args) {
-        String[] arr = { "A", "A", "B" };
+        String[] arr = { "A", "A", "B", "C" };
         permute(arr);
     }
 
