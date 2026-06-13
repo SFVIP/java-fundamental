@@ -1,9 +1,9 @@
 public class BackTrackingBracketCombinations {
     public static void main(String[] args) {
-        System.out.println(BracketCombinations(2)); // 2
-        System.out.println(BracketCombinations(3)); // 5
+        // System.out.println(BracketCombinations(2)); // 2
+        // System.out.println(BracketCombinations(3)); // 5
         System.out.println(BracketCombinations(4)); // 14
-        System.out.println(BracketCombinations(5)); // 42
+        // System.out.println(BracketCombinations(5)); // 42
     }
     
     public static int BracketCombinations(int num) {
@@ -18,9 +18,7 @@ public class BackTrackingBracketCombinations {
             String path,
             int[] count) {
 
-        System.out.printf(
-                "open=%d, close=%d, path=%s%n",
-                open, close, path);
+        System.out.printf( "open=%d, close=%d, path=%s%n", open, close, path);
 
         if (open == num && close == num) {
             count[0]++;
